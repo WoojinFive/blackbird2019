@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand ml-3" href="#">
+            <img src="images/nscc-logo.png" class="img-logo">
+        </a>
+        <div class="navbar-toggler">
+            <div class="d-flex">
+                <!--
+                <a class="nav-link" href="#">Registration</a>
+                <button type="button" class="btn btn-outline-light btn-login ml-3 mr-5">Login</button>
+                -->
+                <button class="navbar-toggler navbar-toggler-bd" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mx-3">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmployers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownEmployers">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item mx-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownStudents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownStudents">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item mx-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRegistration" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownRegistration">
+                        <a class="dropdown-item" href="#">Employer</a>
+                        <a class="dropdown-item" href="#">Student</a>
+                    </div>
+                </li>
+                <!--
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Registration</a>
+                </li>
+                -->
+                <li class="nav-item mx-3">
+                    <button type="button" class="btn btn-outline-light btn-login">Login</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!--<img src="images/NSCC_IT-56.jpg" height="100%" width="100%"/>-->
+                <svg class="bd-placeholder-img carousel-contact" width="100%" height="550" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><!--<rect width="100%" height="100%" fill="#777"/>--></svg>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h1 class="featurette-heading">CONTACT US<!--<span class="text-muted">It’ll blow your mind.</span>--></h1>
+                <h2 class="mt-5">Institute of Technology Campus</h2>
+                <h2 class="mt-4">Phone</h2>
+                <p>XXX-XXX-XXXX</p>
+                <h2 class="mt-4">Fax</h2>
+                <p>XXX-XXX-XXXX</p>
+                <h2 class="mt-4">Email</h2>
+                <p>xxx@nscc.ca</p>
+                <h2 class="mt-4">Mailing address</h2>
+                <p>5685 Leeds Sreet<br>Halifax, Nova Scotia, B2K 2T3</p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        <div id="map"></div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = {lat: 44.668895, lng: -63.61291};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 16, center: uluru});
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOg-D3V4-NFD-51YOYYEN_IPYT3mywIOY&callback=initMap">
+        </script>
+        <hr class="featurette-divider">
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019 Blackbird Project &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

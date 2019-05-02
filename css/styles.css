@@ -1,0 +1,111 @@
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: auto;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+.navbar-toggler-bd {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.collapse-right {
+    width: 100px;
+}
+
+.carousel-first {
+    background-image: url("../images/NSCC_IT-56.jpg");
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+.carousel-contact {
+    background-image: url("../images/event3.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+.card-first {
+    background-image: url("../images/businessmen-businesspeople-businesswomen-1249158.jpg");
+    background-size: 100% 100%;
+}
+
+.card-second {
+    background-image: url("../images/chairs-conference-room-digital-nomad-1181394.jpg");
+    background-size: 100% 100%;
+}
+
+.card-third {
+    background-image: url("../images/coffee-colleagues-cup-1457767.jpg");
+    background-size: 100% 100%;
+}
+
+.featurette-first {
+    background-image: url("../images/hello-i-m-nik-582517-unsplash.jpg");
+    background-size: 100% 100%;
+}
+
+.featurette-second {
+    background-image: url("../images/adult-connection-data-1181354.jpg");
+    background-size: 100% 100%;
+}
+
+
+.featurette-third {
+    background-image: url("../images/hivan-arvizu-soyhivan-1369009-unsplash.jpg");
+    background-size: 100% 100%;
+}
+
+.text-border {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .img-logo {
+        width: 80%;
+    }
+    .btn-login {
+        margin-top: 5px;
+    }
+}
