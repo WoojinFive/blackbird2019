@@ -91,6 +91,15 @@
     background-color: grey;
 }
 
+@media (max-width: 768px) {
+    .carousel-first {
+        background-position: 30% 60%;
+    }
+
+    .carousel-contact {
+        background-position: 50% 40%;
+    }
+}
 
 @media (min-width: 992px) {
     .navbar-nav > li > a {
