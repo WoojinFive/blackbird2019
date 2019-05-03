@@ -68,6 +68,12 @@
     background-position: 0% 15%;
 }
 
+.carousel-eventinformation {
+    background-image: url("../images/shiftkey jacob.jpg");
+    background-size: cover;
+    background-position: 0% 35%;
+}
+
 .card-first {
     background-image: url("../images/businessmen-businesspeople-businesswomen-1249158.jpg");
     background-size: cover;
@@ -97,6 +103,12 @@
 .featurette-third {
     background-image: url("../images/hivan-arvizu-soyhivan-1369009-unsplash.jpg");
     background-size: 100% 100%;
+}
+
+.featurette-eventinformation {
+    background-image: url("../images/Pattison_Owen_W0413846.jpg");
+    background-size: cover;
+    background-position: 50%;
 }
 
 .text-border {
@@ -129,7 +141,7 @@
 
 @media screen and (max-width: 992px) and (min-width: 576px) {
     .card-img-top {
-        height: 300px;
+        height: 400px;
     }
 }
 
