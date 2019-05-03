@@ -44,10 +44,22 @@
     background-position: 0% 60%;
 }
 
+.carousel-second {
+    background-image: url("../images/NSCC_IT-26.jpg");
+    background-size: cover;
+    background-position: 0% 20%;
+}
+
 .carousel-contact {
     background-image: url("../images/event3.jpg");
     background-size: cover;
     background-position: 0% 40%;
+}
+
+.carousel-faq {
+    background-image: url("../images/faq_main.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
 }
 
 .card-first {
@@ -116,5 +128,6 @@
     }
     .btn-login {
         margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
