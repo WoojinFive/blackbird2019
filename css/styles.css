@@ -127,12 +127,17 @@
     }
 }
 
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    .card-img-top {
+        height: 300px;
+    }
+}
+
 @media (min-width: 768px) {
 
 }
 
 @media (max-width: 768px) {
-
     .carousel-first {
         background-position: 30% 60%;
     }
@@ -162,6 +167,13 @@
     }
 }
 
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+
 @media (max-width: 991.98px) {
     .btn-login {
         margin-top: 5px;
@@ -169,7 +181,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
 
 }
 
