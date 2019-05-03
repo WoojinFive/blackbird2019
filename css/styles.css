@@ -70,17 +70,17 @@
 
 .card-first {
     background-image: url("../images/businessmen-businesspeople-businesswomen-1249158.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .card-second {
     background-image: url("../images/chairs-conference-room-digital-nomad-1181394.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .card-third {
     background-image: url("../images/coffee-colleagues-cup-1457767.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .featurette-first {
