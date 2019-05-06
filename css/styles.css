@@ -74,6 +74,12 @@
     background-position: 0% 35%;
 }
 
+.carousel-essntialinformation {
+    background-image: url("../images/cape_breton_bob.jpg");
+    background-size: cover;
+    background-position: 0% 35%;
+}
+
 .card-first {
     background-image: url("../images/businessmen-businesspeople-businesswomen-1249158.jpg");
     background-size: cover;

@@ -1,3 +1,5 @@
+<?php include('server.php') ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/formReg.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/formReg.css" rel="stylesheet">
 
     <title>NSCC Job Fair Website</title>
 
@@ -62,8 +64,8 @@
                 </div>
                 <div class="card-body">
 
-                    <form name="studentForm" method="post" action="" onsubmit="return validateform()">
-
+                    <form name="studentForm" method="post" role="form" action="studentForm.php" onsubmit="return validateform()">
+                        <?php include('errors.php'); ?>
                         <!-- <fieldset> -->
                         <!-- <legend class="text-center">Registration for Student (<span class="req"><small> required
                                             <span class="star">*</span></small></span>)</legend> -->
@@ -86,7 +88,7 @@
                         </div>
                         <div class="form-group">
                             <label for="studentID">Student ID <span class="star">*</span> (ie: w0123456)</label>
-                            <input type="name" class="form-control" id="studentID" placeholder="Student ID">
+                            <input type="name" class="form-control" id="studentID" name="studentID" placeholder="Student ID">
                             <small id="studentIDHelp" class="form-text text-muted"><i>Eg. w0410000</i></small>
 
                         </div>
@@ -132,11 +134,11 @@
 
                         <div class="form-group">
                             <label for="personalPhoto">Upload Personal Photo</label>
-                            <input type="file" class="form-control-file" id="resume" name="resume">
+                            <input type="file" class="form-control-file" id="photo" name="photo">
                         </div>
                         <div class="form-group">
                             <label for="presentationPhoto">Portfolio</label>
-                            <input type="file" class="form-control-file" id="resume" name="resume">
+                            <input type="file" class="form-control-file" id="portfolio" name="portfolio">
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -153,7 +155,7 @@
                             </label>
                         </div>
                         <div class="submitButton text-center">
-                            <button type="submit" class="btn btn-primary mb-2" id="submit">Submit Registration</button>
+                            <button type="submit" class="btn btn-primary mb-2" id="submit" name="regStudent">Submit Registration</button>
                             <!-- <button type="submit" class="btn btn-primary btn-block">Register</button> -->
                         </div>
                     </form>
@@ -175,15 +177,15 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/formValidationStudent.js"></script>
+<script src="../js/formValidationStudent.js"></script>
 <script type="text/javascript">
     $(document).ready( function() {
-        $('#header').load("header.html");
+        $('#header').load("../header.html");
     });
 </script>
 <script type="text/javascript">
     $(document).ready( function() {
-        $('#footer').load("footer.html");
+        $('#footer').load("../footer.html");
     });
 </script>
 </body>
