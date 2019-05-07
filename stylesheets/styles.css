@@ -39,80 +39,92 @@
 }
 
 .carousel-first {
-    background-image: url("../images/NSCC_IT-56.jpg");
+    background-image: url("../images/carousel_first.jpg");
     background-size: cover;
     background-position: 0% 60%;
 }
 
 .carousel-second {
-    background-image: url("../images/group2.jpg");
+    background-image: url("../images/carousel_second.jpg");
     background-size: cover;
     background-position: 0% 60%;
 }
 
 .carousel-contact {
-    background-image: url("../images/event3.jpg");
+    background-image: url("../images/carousel_contact.jpg");
     background-size: cover;
     background-position: 0% 40%;
 }
 
-.carousel-faq {
-    background-image: url("../images/faq_main.jpg");
+.carousel-faqstudent {
+    background-image: url("../images/carousel_faqstudent.jpg");
     background-size: cover;
     background-position: 0% 25%;
 }
 
 .carousel-howtoprepare {
-    background-image: url("../images/apple-class-conference-7102.jpg");
+    background-image: url("../images/carousel_howtoprepare.jpg");
     background-size: cover;
     background-position: 0% 15%;
 }
 
 .carousel-eventinformation {
-    background-image: url("../images/shiftkey jacob.jpg");
+    background-image: url("../images/carousel_eventinformation.jpg");
     background-size: cover;
     background-position: 0% 35%;
 }
 
 .carousel-essntialinformation {
-    background-image: url("../images/cape_breton_bob.jpg");
+    background-image: url("../images/carousel_essntialinformation.jpg");
     background-size: cover;
     background-position: 0% 35%;
 }
 
-.card-first {
-    background-image: url("../images/businessmen-businesspeople-businesswomen-1249158.jpg");
+.carousel-previousparticipants {
+    background-image: url("../images/carousel_previousparticipants.jpg");
+    background-size: cover;
+    background-position: 0% 0%;
+}
+
+.carousel-faqemployer {
+    background-image: url("../images/carousel_faqemployer.jpg");
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.index-card-first {
+    background-image: url("../images/index_card_first.jpg");
     background-size: cover;
 }
 
-.card-second {
-    background-image: url("../images/chairs-conference-room-digital-nomad-1181394.jpg");
+.index-card-second {
+    background-image: url("../images/index_card_second.jpg");
     background-size: cover;
 }
 
-.card-third {
-    background-image: url("../images/coffee-colleagues-cup-1457767.jpg");
+.index-card-third {
+    background-image: url("../images/index_card_third.jpg");
     background-size: cover;
 }
 
-.featurette-first {
-    background-image: url("../images/hello-i-m-nik-582517-unsplash.jpg");
+.index-featurette-first {
+    background-image: url("../images/index_featurette_first.jpg");
     background-size: 100% 100%;
 }
 
-.featurette-second {
-    background-image: url("../images/adult-connection-data-1181354.jpg");
+.index-featurette-second {
+    background-image: url("../images/index_featurette_second.jpg");
     background-size: 100% 100%;
 }
 
 
-.featurette-third {
-    background-image: url("../images/hivan-arvizu-soyhivan-1369009-unsplash.jpg");
+.index-featurette-third {
+    background-image: url("../images/index_featurette_third.jpg");
     background-size: 100% 100%;
 }
 
 .featurette-eventinformation {
-    background-image: url("../images/Pattison_Owen_W0413846.jpg");
+    background-image: url("../images/featurette_eventinformation.jpg");
     background-size: cover;
     background-position: 50%;
 }
@@ -159,17 +171,33 @@
     .carousel-first {
         background-position: 30% 60%;
     }
+
     .carousel-second {
-        background-position: 10% 60%;
+        background-position: 45% 60%;
     }
+
     .carousel-contact {
         background-position: 50% 40%;
     }
+
     .carousel-faq {
         background-position: 20% 0%;
     }
+
     .carousel-howtoprepare {
         background-position: 30% 0%;
+    }
+
+    .carousel-eventinformation {
+        background-position: 40% 0%;
+    }
+
+    .carousel-previousparticipants {
+        background-position: 40% 10%;
+    }
+    
+    .carousel-faqemployer {
+        background-position: 50% 0%;
     }
 }
 
